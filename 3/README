@@ -1,0 +1,20 @@
+The program for homework3 include a main.cpp file
+
+The connection and send parts are developed based on the example code in class
+
+No special requirement for compiling
+
+To run it:
+
+example: ./a.out http://www.asquaredlabs.com/csci4220/ > output.html 2>header.txt
+
+Modifications are made on two parts:
+
+1. only use two buffers: temp_buf and header, and use calloc to put them on the heap--based on the application, no 0 is appended to the end.
+
+2. instead of using str* which consider \0 as termination, only use memcpy.  
+
+The assumption is the header for a http response is never larger than 8KB; it is truefor apache server. Tomcat has a larger header, in that case, this code should be altered by changing the HEADER_LIMIT to a larger number.
+
+
+Ke Wu

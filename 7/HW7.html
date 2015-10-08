@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="HW7">
+<meta name="keywords" content="AJAX HW">
+<meta name="author" content="Ke Wu">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+</head>
+<body>
+<p>zip code: <input type='text' id='zipcode'> <button type='submit' id='submit' > Get Weather</button></p>
+<br>
+<p>current weather:</p>
+<p>temperature: <span id='temperature'></span></p>
+<p>wind speed: <span id='windspeed'></span></p>
+<p>wind direction: <span id='wind_direct'></span></p>
+<p id='test'></p>
+
+<script>
+ $(function() {
+ 	$('#submit').click(function(){
+ 		var zipcode = $('#zipcode').val();
+
+ 		$.ajax({
+    		url: "/weather/"+zipcode,
+    		method: "get",
+    		success: function(data) {
+        	addinfo(data);
+    		}    
+    	});
+	
+	});
+
+	function addinfo(data){
+		var temp = (data.main.temp - 273.16).toFixed(1);
+		//$('#test').html(JSON.stringify(data));
+		var windspeed = data.wind.speed;
+		var winddeg = data.wind.deg.toFixed(0);
+		$('#temperature').html(temp+' &degC');
+		$('#windspeed').html(windspeed);
+		$('#wind_direct').html(winddeg);
+	}
+
+});
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html> 

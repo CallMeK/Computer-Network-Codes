@@ -1,0 +1,24 @@
+The program consists of three files, main.cpp, RoutesAnalyzer.h and RoutesAnalyzer.cpp
+
+The compiling is simply:
+
+g++ -c RoutesAnalyzer.cpp
+g++ -c main.cpp
+g++ main.o RouteAnalyzer.o
+
+To run it for part I:
+
+	Need an empty nat file
+
+	touch nat_empty.txt
+	./a.out routes.txt arp.txt nat_empty.txt <pdus.txt
+
+To run it for part II:
+
+	ruby nat_test.rb "./a.out routes.txt arp.txt nat.txt" 
+
+
+In the code, the function of router is simulated by the function route_and_report in main.cpp
+
+All the classes are implemented in RoutesAnalyzer.h/cpp
+

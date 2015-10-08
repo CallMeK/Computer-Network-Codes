@@ -1,0 +1,17 @@
+The codes include Connection.cpp Connection.h and main.cpp
+
+The whole idea of implementation can be seen from Connection.h
+
+1. read function is not virtual but it calls a virtual function "myrecv"
+   myrecv is a wrapper for recv (TCP) or BIO_read (SSL) depend on the child class
+   All other parts are the same for TCP and SSL
+	
+2. write() is a virtual funciton since the two child classes are totally different
+
+3. In Https_Conn (SSL), the BIO_free_all is implemented in the destructor
+
+The program use codes from class examples.
+
+
+Ke Wu
+

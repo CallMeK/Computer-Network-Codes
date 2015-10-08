@@ -1,0 +1,14 @@
+The .js file is modified based on the example from HW7
+
+An array of objects are used. 
+Each object has a "data_" member to store the response and a "timecreated" to
+store the time created.
+
+For this application, the time expiration only occurs when a query comes, that is,
+the time check is only to make the result accurate, but not for memory usage.
+
+For memory usage, it may require a time check detached from the major event handler.
+
+
+
+Ke

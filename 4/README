@@ -1,0 +1,11 @@
+The zip file include a main.cpp and a README
+
+To use the code:
+
+g++ main.cpp
+
+./a.out < config.txt
+
+The format of config.txt is the same as mentioned in the homework requirements
+
+Ke Wu

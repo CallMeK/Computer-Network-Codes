@@ -1,0 +1,10 @@
+#HW7 for AJAX
+
+#The local test is valid using Firefox, but failed in Chrome
+
+#In chrome the error is:
+
+Cross origin requests are only supported for protocol schemes
+
+
+

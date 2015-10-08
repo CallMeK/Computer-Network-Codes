@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>NetProg Homework 6</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				var imgs = $("img");
+				$('#unwrapImages').click(function(){
+					imgs.unwrap();
+				});
+
+				$('#addBorder').click(function(){
+					imgs.addClass('imageBorder');
+				});
+
+				$('#removeBorder').click(function(){
+					imgs.removeClass('imageBorder');
+				})
+
+				$('#toggleBorder').click(function(){
+					imgs.toggleClass('imageBorder');
+				})
+			});
+
+
+
+
+// your solution goes here!
+		</script>
+		<style type="text/css">
+			#images img {
+				width: 20%;
+			}
+
+			.imageBorder {
+				border: 5px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="buttons">
+			<input type="button" id="unwrapImages" value="Unwrap" />
+			<input type="button" id="addBorder" value="Add Borders" />
+			<input type="button" id="removeBorder" value="Remove Borders" />
+			<input type="button" id="toggleBorder" value="Toggle Borders" />
+		</div>
+
+		<div id="images">
+			<div><img src="http://i.imgur.com/zriEI7a.jpg" /></div>
+			<div><img src="http://i.imgur.com/Z3qVgEd.jpg" class="imageBorder" /></div>
+			<div><img src="http://i.imgur.com/eZRcosY.jpg" /></div>
+		</div>
+	</body>
+</html>

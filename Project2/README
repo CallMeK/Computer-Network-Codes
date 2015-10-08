@@ -1,0 +1,17 @@
+The code for project 2 include a main.cpp
+
+The code was developed with the reference to code example in class
+
+To compile it:
+g++ main.cpp -std=c++11
+
+The code was tested on one machine with three shells
+
+Server : ./a.out
+
+Client 1: node p2_sample_client.js localhost user1
+
+Client 2: node p2_sample_client.js localhost user2 user1
+
+Though it is rare but it happens that the CALL message was captured earlier thanREGISTER, in that case, we need to rerun Client2.
+

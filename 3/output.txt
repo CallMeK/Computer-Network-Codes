@@ -1,0 +1,106 @@
+<html>
+    <head><title>CSCI4220 - Network Programming</title></head>
+    <body>
+        <h1>CSCI4220 - Network Programming</h1>
+        <p>
+            Instructor: Andrew Armenia (andrew@asquaredlabs.com) <br />
+            Office Hours: By Appointment
+        </p>
+        <p>
+            TA: Pranshu Saxena (saxenp2@rpi.edu) <br />
+            Office Hours: Thursdays, 10am-12pm, Amos Eaton 217
+        </p>
+
+
+        <h2>Lecture Slides</h2>
+        <p>
+            <ul>
+                <li><a href="syllabus.pdf">Syllabus</a></li>
+                <li><a href="lecture1.pdf">Lecture 1 Slides</a></li>
+                <li><a href="lecture2.pdf">Lecture 2 Slides: IPv4 and Routing</a></li>
+                <li><a href="lecture3.pdf">Lecture 3 Slides: TCP, UDP, QoS</a></li>
+                <li><a href="lecture4.pdf">Lecture 4 Slides: IPv6</a></li>
+                <li><a href="lecture5.pdf">Lecture 5 Slides: Security</a></li>
+                <li><a href="lecture6.pdf">Lecture 6 Slides: Debugging/Analysis Tools + Review</a></li>
+                <li>
+                    <a href="lecture7.pdf">Lecture 7 Slides: Sockets, Addresses, and UDP</a>
+                    (examples: <a href="udp_send.cpp">udp_send.cpp</a>,
+                    <a href="udp_receive.cpp">udp_receive.cpp</a>,
+                    <a href="udp_receive_with_name.cpp">udp_receive_with_name.cpp</a>,
+                    <a href="udp6_send.cpp">udp6_send.cpp</a>,
+                    <a href="udp6_receive_with_name.cpp">udp6_receive_with_name.cpp</a>)
+                </li>
+                <li><a href="lecture8.pdf">Lecture 8 Slides: UDP NAT Traversal</a></li>
+                <li><a href="lecture9.pdf">Lecture 9 Slides: UDP Multicast and Socket Options</a> (<a href="udp6_mcast_receive.cpp">udp6_mcast_receive.cpp</a>)</li>
+                <li>
+                    <a href="lecture10.pdf">Lecture 10 Slides: TCP Sockets and connect()</a>
+                    (<a href="tcp6_connect.cpp">tcp6_connect.cpp</a>)
+                </li>
+                <li>
+                    <a href="lecture11.pdf">Lecture 11 Slides: TCP Servers, listen(), accept()</a>
+                    (<a href="tcp6_simple_server.cpp">tcp6_simple_server.cpp</a>)
+                </li>
+                <li>
+                    <a href="lecture12.pdf">Lecture 12 Slides: Multiprocess and Multithreaded Servers</a>
+                    (<a href="slow_tcp_server.cpp">slow_tcp_server.cpp</a>,
+                    <a href="multiprocess.cpp">multiprocess.cpp</a>,
+                    <a href="multithread.cpp">multithread.cpp</a>,
+                    <a href="prefork.cpp">prefork.cpp</a>)
+                </li>
+                <li>
+                    <a href="lecture13.pdf">Lecture 13 Slides: select() and poll()</a>
+                    (<a href="select.cpp">select.cpp</a>,
+                    <a href="poll.cpp">poll.cpp</a>)
+                </li>
+            </ul>
+        </p>
+
+        <h2>Assignments and Projects</h2>
+        <p>
+            <ul>
+                <li>
+                    <a href="project1.pdf">Project 1: IPv4 Router Simulation</a>
+                    (sample <a href="routes.txt">routes.txt</a>,
+                    <a href="arp.txt">arp.txt</a>,
+                    <a href="pdus.txt">pdus.txt</a>,
+                    <a href="p1_part1output.txt">expected output (part 1)</a>,
+                    <a href="nat.txt">nat.txt</a>,
+                    <a href="nat_test.rb">nat_test.rb</a>,
+                    <a href="p1_part2output.txt">expected output (part 2)</a>).
+                    In addition to the languages listed in the document, 
+                    you may use Java.
+                </li>
+                <li>
+                    <a href="samplequiz_questions.pdf">Sample Quiz</a> 
+                    (<a href="samplequiz_answers.pdf">Answers</a>)
+                </li>
+                <li>
+                    <a href="homework1.pdf">Homework 1: UDP Sockets and NAT Traversal</a> 
+                    (<a href="rendezvous.js">rendezvous.js</a>, 
+                    <a href="echo.js">echo.js</a>,
+                    <a href="hw1_test.pcap">hw1_test.pcap</a>)
+
+                </li>
+                <li>
+                    <a href="homework2.pdf">Homework 2: UDP Multicast</a> 
+                </li>
+                <li>
+                    <a href="homework3.pdf">Homework 3: HTTP Client</a>
+                </li>
+                <li>
+                    <a href="project2.pdf">Project 2: UDP Streaming Proxy</a>
+                </li>
+            </ul>
+        </p>
+
+        <h2>Additional Reading</h2>
+        <p>
+            <ul>
+                <li>Socolofsky and Kale, <a href="https://www.rfc-editor.org/rfc/rfc1180.txt">RFC 1180: A TCP/IP Tutorial</a></li>
+                <li>Kevin R. Fall, <i>TCP/IP Illustrated, Volume 1: The Protocols (2nd edition)</i> (Addison-Wesley, 2011, ISBN 978-0321336316)</li>
+                <li>Michael Kerrisk, <i>The Linux Programming Interface</i> (No Starch Press, 2010, ISBN 978-1593272203)</li>
+            </ul>
+        </p>
+    </body>
+</html>
+

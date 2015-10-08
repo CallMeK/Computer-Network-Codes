@@ -1,0 +1,22 @@
+IThe homework zip file contains a main.cpp file
+
+To compile it:
+
+g++ main.cpp -std=c++11 -lpthread
+
+to run it: ./a.out <username>
+
+The code is developed base on class code examples, the broadcast ip is hard-coded inside the send fuctions
+
+There are three send functions with similar structures. They are separated for debug convenience
+
+When started, the program will send announcement to the multicast ip and then user can either send message in multicast way or private way (one line of message terminated by '\n')
+
+example:
+
+./a.out wuk3
+input: hello world <enter>
+output: From: wuk3 hello world
+input: /wuk3 hello world private
+output: hello world private
+
